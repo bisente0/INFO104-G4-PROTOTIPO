@@ -1,49 +1,103 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ESQUEMA DE KOLORES 🔥🔥🔥*/
+  --color-bg: #008080;
+  --color-panel: #c0c0c0;      
+  --color-accent: #ff00ff;     
+  --color-highlight: #ffff33;  
+  --color-link: #0000ee;
+  --color-link-visited: #551a8b;
+  --color-text: #000000;
+  
+  --border-light: #ffffff;
+  --border-dark: #000000;
+
+  /* FUENTES */
+  --font-pixel: 'Press Start 2P', cursive;
+  --font-body: 'Times New Roman', Times, serif;
+  --font-mono: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-html {
-  height: 100%;
-}
-
-html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+  background-color: var(--color-bg);
+  background-image: radial-gradient(circle, #ffffff33 1px, transparent 1px);
+  background-size: 18px 18px;
+  font-family: var(--font-body);
+  color: var(--color-text);
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+link-thing { color: var(--color-link); }
+link-thing:visited { color: var(--color-link-visited)}
+
+.beveled-box {
+  background: var(--color-panel);
+  border-top: 2px solid var(--border-light);
+  border-left: 2px solid var(--border-light);
+  border-right: 2px solid var(--border-dark);
+  border-bottom: 2px solid var(--border-dark);
+  padding: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.beveled-button {
+  background: var(--color-panel);
+  border-top: 2px solid var(--border-light);
+  border-left: 2px solid var(--border-light);
+  border-bottom: 2px solid var(--border-dark);
+  border-right: 2px solid var(--border-dark);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.beveled-button:active {
+  border-top: 2px solid var(--border-dark);
+  border-left: 2px solid var(--border-dark);
+  border-right: 2px solid var(--border-light);
+  border-bottom: 2px solid var(--border-light);
+}
+
+.gifsLokos {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  pointer-events: none;
+}
+
+.gifsLokos img {
+  position: absolute;
+  z-index: 10;
+}
+
+.perroLoko {
+  top: 10px;
+  right: 20px;
+}
+
+/* efecto de parpadeo!!!! */
+@keyframes parpadeo {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.parpadear { animation: parpadeo 1s step-start infinite; }
+
+/* desplazamiento para marquesina (SOLO UN EJE) 
+    vw : viewport width!!! que convenienteeeee!!!!
+*/
+@keyframes desplazar {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(-100vw); } 
+}
+
+.marquesina-texto{
+  display: inline-block;
+  white-space: nowrap;
+  color: white;
+  animation: desplazar 8s linear infinite;
 }

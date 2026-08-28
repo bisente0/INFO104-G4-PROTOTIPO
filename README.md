@@ -1,40 +1,43 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PROTOTIPO APLICACIÓN
+## OVERVIEW
 
-## Getting Started
+*Modelo "vacío"* para el desarrollo de una aplicación cuyo propósito es fomentar el hábito de la lectura en la población.
+El medio, nuestra aplicación, tendrá la capacidad de manipular una *librería personal interactiva*, registrando progreso y logros/metas individuales que enriquecerán la experiencia del usuario.
 
-First, run the development server:
+Con este fin, se observará en este repositorio la experiencia visual del usuario.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## UI
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+En un intento de revivir la experiencia del internet en sus tiempos más jóvenes, mi prototipo se basa no sólo en fomentar la lectura, sino también en brindar al usuario una experiencia y un blog mucho más personal, lejos de las plantillas repetitivas y la pérdida de personalidad a cambio de la simpleza o un flujo "eficiente".
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<p allign ="center">
+    <img src="https://storage.googleapis.com/blog-images-backup/1*l9HAuDnCBvFiRX61opC6Kw.png" width="350" alt="IMG1">
+    <img src="https://storage.googleapis.com/blog-images-backup/1*64jSmWQdZ0STcy6YcambTw.gif" width="350" alt="IMG2">
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+</p>
 
-## Learn More
+Sin embargo, sería codicioso hablar de lo estéticamente innecesario sin antes tener el layout de la página.
 
-To learn more about Next.js, take a look at the following resources:
+## FRONT PAGE
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Desde aquí se podrá acceder al:
+* Catálogo
+* Biblioteca personal
+* Logros
+* Slider de música + Lista  (embla-carousel lib)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+y se podrán observar secciones como: 
+* Novedades en el catálogo
+* Libros sugeridos
+* Último parche
+* Número de usuario de ingreso correspondiente
+* Noticias de interés
 
-## Deploy on Vercel
+Cabe destacar que la sección de "Biblioteca personal", con el escalado correcto, se podría convertir en un blog personal público a otros usuarios, para generar interacción, pero por motivos de simplificación, lo dejamos como una plantilla desconectada.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# ESCALADO
+Las visiones a futuro de esta "plantilla" giran en torno a las interacciones sociales para promover la lectura y logros personales.
+Considerando características como algoritmos CRUD que permiten al usuario modificar sus propias bibliotecas personales/blogs, comunicación a tiempo real, interacción entre blogs, upvotes, rankings y comentarios.
+Para esto, se consideraría Supabase y otras librerías de REACT.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# INFO104-G4-PROTOTIPO
->>>>>>> fb7827fb0cff67662a6198d33a37eaf9ec977270
+La idea no es únicamente impulsar a través de logros, sino de que el usuario se apropie de su plataforma.

@@ -1,69 +1,80 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Bar from "./components/bar";
+import EmblaCarousel from "embla-carousel";
+
+
+
 
 export default function Home() {
+
   return (
-    <div className={styles.page}>
+    <>
+      <Bar />
       <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+        <section className={`beveled-box ${styles.hero}`}>
+          <h1 className={styles.tituloPixel}>SUPERPAGINA!!</h1>
+          <p className={styles.subtitulo}>
+            <span className="parpadear">  ☆★ ATENCIOOOON ★☆  </span>
+            LEE IGNORANTE 🔥🔥🔥🔥
           </p>
+          <link-thing href="/catalogo" className="beveled-button">
+            ENTRAR AL CATÁLOGO 
+          </link-thing>
+        </section>
+
+        <div className={styles.layoutColumnas}>
+
+        <div className={styles.columnaPrincipal}>
+        <section className={styles.novedades}>
+          <h2 className={styles.tituloSeccion}>
+            NOVEDADES DEL MES!!!
+          </h2>
+          <div className={styles.grid}>
+            LA IDEA ES RENDERIZAR LOS LIBROS ACÁ CON UN .MAP()
+            MISIÓN DE CREAR OBJETOS TIPO BOOKINFO O ALGO ASÍ PARA PODER RECORRER TODOS Y IMPRIMIRLOS CON GRID.
+            PROBABLEMENTE NECESITE OTROS DOS ARCHIVOS EN COMPONENTES, UNO DE LIBROS Y OTRO EL MÓDULO DE ESTE,
+            Y PARA TESTEAR, UN .JSON CON LOS LIBROS A LEER.
+          </div>
+        </section>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className={styles.columnaLateral}>
+        <section className={styles.sugerencias}>
+          <h2 className={styles.tituloSeccion}>
+            SUGERIDOS!!!!
+          </h2>
+          <div className={styles.grid}>
+            AQUÍ SE DESARROLLARÍA UN ALGORITMO PARA ENCONTRAR, POR ORDEN DE PRIORIDAD, LOS LIBROS CON MÁS
+            COINCIDENCIAS DE GÉNERO SEGÚN LA BIBLIOTECA DEL USUARIO.
+          </div>
+        </section>
         </div>
+      </div>
+
+      <footer className={`beveled-box ${styles.footer}`}>
+        <p> PROTOTIPO DE APLICACIÓN. ÚLTIMA UPDATE (27/08/2026) </p>
+      </footer>
+
+      <div className={styles.gifsLokos}>
+        <img
+          src="/perro.gif"
+          className={styles.perroLoko}
+          alt="PERRO"
+          />
+        <img
+          src="/gato.gif"
+          className={styles.gatoLoko}
+          alt="GATO"
+          />
+        <img
+          src="computa.gif"
+          className={styles.computa}
+          alt="COMPUTADOR"
+          />
+      </div>
       </main>
-    </div>
+    </>
+
   );
 }
