@@ -16,8 +16,6 @@ En un intento de revivir la experiencia del internet en sus tiempos más jóvene
 
 </p>
 
-Sin embargo, sería codicioso hablar de lo estéticamente innecesario sin antes tener el layout de la página.
-
 ## FRONT PAGE
 
 Desde aquí se podrá acceder al:
@@ -41,3 +39,6 @@ Considerando características como algoritmos CRUD que permiten al usuario modif
 Para esto, se consideraría Supabase y otras librerías de REACT.
 
 La idea no es únicamente impulsar a través de logros, sino de que el usuario se apropie de su plataforma.
+
+
+**Vicente Rojas**
